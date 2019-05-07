@@ -1,0 +1,26 @@
+package rules
+import com.neo.drools.YihuiExample
+
+rule "yihui"
+//    no-loop true
+//    lock-on-active true
+//    salience 1
+    when $m:String(equals("1"))
+    then
+//       YihuiExample yihuiExample=new YihuiExample();
+//       yihuiExample.abb();
+       System.out.println("11111");
+       $m="aaaa";
+       System.out.println($m);
+//       update($m);
+//      insert("33333");
+       //update($m);
+//       update($m)
+    end
+rule "yihui2"
+   when $m:String(!equals("1"))
+   then
+       System.out.println("222222");
+//       $m="1";
+//       update($m)
+   end

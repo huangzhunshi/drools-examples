@@ -1,0 +1,12 @@
+//package rules
+//
+//rule "yihui3"
+//    when $m:String(toString()=="1")
+//    then
+//       System.out.println("2-11111");
+//    end
+//rule "yihui4"
+//   when $m:String(toString()!="1")
+//   then
+//       System.out.println("2-222222");
+//   end

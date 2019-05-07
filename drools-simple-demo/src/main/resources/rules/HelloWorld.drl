@@ -30,6 +30,8 @@ rule "Hello World"
 //                       setStatus( Message.GOODBYE ) };
     modify ( m ) { message = "Goodbye cruel world",
                    status = Message.GOODBYE };
+
+
 end
 
 rule "Good Bye"

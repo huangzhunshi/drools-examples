@@ -1,0 +1,16 @@
+package rules
+import com.neo.drools.entity.YiHuiModel
+//
+rule "yihui5"
+    when $m:YiHuiModel(id==1)
+    then
+       System.out.println($m.getId());
+       $m.setId(2);
+
+       update($m)
+    end
+rule "yihui6"
+   when $m:YiHuiModel(id!=1)
+   then
+       System.out.println($m.getId());
+   end
